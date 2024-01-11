@@ -3,11 +3,15 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - '**/README.md'
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ "main" ]
-
+    paths-ignore:
+      - '**/README.md'
+    
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
