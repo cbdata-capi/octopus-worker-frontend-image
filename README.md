@@ -5,7 +5,8 @@ It extends `octopusdeploy/worker-tools` with `npm` and other tools needed.
 
 ## Deployment
 
-GitHub action on change in `[main]` will trigger build.
+GitHub action on change in `[main]` will trigger build of `*:main` image.
+To publish a version, push tag in format `v*.*.*`.
 
 ## Local Testing
 
